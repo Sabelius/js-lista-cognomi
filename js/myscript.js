@@ -11,7 +11,9 @@ console.log("La lista aggiornata con il nuovo cognome è:", listaCognomi);
 
 
 
-listaCognomi.sort();
+listaCognomi.sort(function(a, b) {
+    return a.localeCompare(b);
+});
 
 console.log("La lista ordinata alfabeticamente è:", listaCognomi);
 
